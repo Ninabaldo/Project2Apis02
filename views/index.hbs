@@ -28,8 +28,8 @@
   {{#each schemeArray}}
   
   
-   <img src= {{this}} alt="" id= "colors">
-  <p>{{this.colors.hex.value}}</p>
+   <img src= {{this.image}} alt="" id= "colors">
+   {{this.hex}}
    <span onclick="copy(this)" data-copy=""></span>
    <i style="font-size:24px" href="/profile"class="fa">&#xf004;</i>
   

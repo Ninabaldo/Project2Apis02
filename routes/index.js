@@ -15,8 +15,8 @@ router.get('/',(req, res)=>{
     colors.forEach((color)=>{ 
       ColorAPI
     .getColorScheme(color.toString()) 
-    .then((result) => {
-        schemeArray.push(result.data.image.bare)
+    .then((result) => { console.log(result.data.seed.hex.value)
+        schemeArray.push({image:result.data.image.bare, hex:result.data.seed.hex.value})
         if(schemeArray.length === 40 ){
          //res.send(result)
           res.render("index", {schemeArray} )
