@@ -8,6 +8,7 @@ const randomColor = require('randomcolor');
 
 router.get('/',(req, res)=>{
     let colors = randomColor({count:40})
+    let colors = randomColor({count:53})
    colors = colors.map ((color)=>{
     return color.substring (1)      })
     let schemeArray =[]
@@ -17,7 +18,7 @@ router.get('/',(req, res)=>{
     .getColorScheme(color.toString()) 
     .then((result) => { console.log(result.data.seed.hex.value)
         schemeArray.push({image:result.data.image.bare, hex:result.data.seed.hex.value})
-        if(schemeArray.length === 40 ){
+        if(schemeArray.length === 53 ){
          //res.send(result)
           res.render("index", {schemeArray} )
         } 

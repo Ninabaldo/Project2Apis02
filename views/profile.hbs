@@ -5,9 +5,8 @@
     <div class="container user-list">
         <h2>{{ profile.username }} Favourites Colors</h2>
         <div  id="search-result" class='row search-row'>
-            {{#each profile.favourites}}
-                <div class=' col-3 '>
-                    <div class='card'>
+             {{#each schemeArray}}
+               
                         <img src={{this}} 
 
                         <form action = "/delete-favourite" method="POST">

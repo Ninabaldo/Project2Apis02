@@ -1,9 +1,5 @@
 
-body{
-  background-image: url(../images/);
-  background-repeat: no-repeat;
-  padding:50px;
-}
+
 
 body {
   padding: 50px;
@@ -255,25 +251,60 @@ footer p {
 }
 .btn-secondary {
   color: #fff;
-  
   border-color: #ffffff;
 }
 
-#colors{
+.colors{
   border-radius: 40px;
   padding: 0px;
-  height: 300px;
-  width: 300px;
-  border:15px solid transparent;
+  height: 200px;
+  width: 200px;
+  border:15px solid white;
+  position:relative;
+
   
 
 }
 
+.colors p{
+  text-align: center;
+  margin:45% auto;
+  color:transparent;
+  
+
+
+}
+
+p:hover{
+  color:rgb(255, 255, 255);
+  cursor:pointer;
+}
+
+
+
+.contenedor{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  
+}
+
+
 i.fa{
   color:rgb(187, 185, 185);
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 i.fa:hover{
   color:rgb(255, 92, 220);
   cursor: pointer;
+  
 }
+
+
 

@@ -4,16 +4,7 @@
 <br>
 
   <br>
-    <span style="color:#FF0000">C</span>
-    <span style="color:#66CC66">O</span>
-    <span style="color:#669eff">l</span>
-    <span style="color:#FFCCCC">O</span>
-    <span style="color:#7b39a7">R</span>
-    <span style="color:#889181">E</span>
-    <span style="color:#ff8400">D</span>
-    <span style="color:#ffffff">.</span>
-    <span style="color:#1900ff">I</span>
-    <span style="color:#a4f7bc">D</span>
+   
 <br>
   <div class="wrap">
     <div class="search">
@@ -23,23 +14,17 @@
       </button>
     </div>
   </div>
-<center>
+
 <br>
+<div class="contenedor">
   {{#each schemeArray}}
-  
-  
-   <img src= {{this.image}} alt="" id= "colors">
-   {{this.hex}}
-   <span onclick="copy(this)" data-copy=""></span>
-   <i style="font-size:24px" href="/profile"class="fa">&#xf004;</i>
-  
 
-
+   <div style='background-image: url({{this.image}})'; class= "colors"> 
+ <p>{{this.hex}} </p>
+ </div>
   {{/each}}
-
-  
+ 
 </div>
-</center>
 <footer>
 
 
