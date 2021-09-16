@@ -18,7 +18,7 @@ const isLoggedIn = require("../middleware/isLoggedIn");
 router.get('/profile', isLoggedIn, (req, res) => {
   User
     .findById(req.user._id)
-    .populate('favourites')
+    //.populate('favourites')
     .then((user) =>{
       res.render('auth/profile', { user:user });
     })
