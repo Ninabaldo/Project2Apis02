@@ -266,16 +266,16 @@ footer p {
 
 }
 
-.colors p{
+.colors a{
   text-align: center;
-  margin:45% auto;
   color:transparent;
+  
   
 
 
 }
 
-p:hover{
+a:hover{
   color:rgb(255, 255, 255);
   cursor:pointer;
 }
@@ -308,3 +308,14 @@ i.fa:hover{
 
 
 
+.colors2{
+  border-radius: 40px;
+  padding: 0px;
+  height: 500px;
+  width: 500px;
+  border:15px solid white;
+  
+
+  
+
+}

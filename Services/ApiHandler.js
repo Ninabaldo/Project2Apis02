@@ -8,9 +8,9 @@ class ColorApi {
     });
   }
 
-  getColorScheme = (color) => this.api.get(`/scheme/?hex=${color}&mode=analogic&count=1`);
-  getColorScheme = (gradient) => this.api.get(`/scheme/?hex=${color}&mode=`);
-  getHexScheme =(hex) => this.api.get(`/scheme/?hex=${hex.value}`);
+  getColor = (color) => this.api.get(`/scheme/?hex=${color}&mode=analogic&count=1`);
+  getGradientScheme =(color) => this.api.get(`/scheme/?hex=${color}&mode=analogic&count=3`);
+  getHexScheme =(hex)=> this.api.get(`/scheme/?hex=${hex.value}`);
 
 }
 
