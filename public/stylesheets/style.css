@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   box-sizing:border-box;
   
+  
 }
 .wrap{
   max-width:960px;
@@ -24,7 +25,7 @@ body {
   margin: 0 auto;
   font-size: 18px;
   padding-left:.5em;
-  border:2px solid #eae9e9;
+  border:2px solid transparent;
   border-radius:20px;
 }
 .search-btn{
@@ -59,7 +60,7 @@ form {
 	margin: 4em auto;
 	padding: 3em 2em 2em 2em;
 	background: #fafafa;
-	border: 1px solid #ebebeb;
+	border: 1px solid transparent;
 	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
   border-radius: 15px;
 }
@@ -231,7 +232,7 @@ footer p {
 .btn-primary {
   color: #fff;
   
-  border-color: #ffffff;
+  border-color: transparent;
 }
 
 
@@ -255,11 +256,11 @@ footer p {
 }
 
 .colors{
-  border-radius: 40px;
+  border-radius: 70px;
   padding: 0px;
-  height: 200px;
-  width: 200px;
-  border:15px solid white;
+  height: 300px;
+  width: 300px;
+  border:20px solid white;
   position:relative;
 
   
@@ -269,7 +270,8 @@ footer p {
 .colors a{
   text-align: center;
   color:transparent;
-  
+  position: absolute;
+  margin-top: 110px;
   
 
 
@@ -290,32 +292,20 @@ a:hover{
   
 }
 
-
-i.fa{
-  color:rgb(187, 185, 185);
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-i.fa:hover{
-  color:rgb(255, 92, 220);
-  cursor: pointer;
-  
-}
-
-
-
 .colors2{
   border-radius: 40px;
   padding: 0px;
   height: 500px;
   width: 500px;
-  border:15px solid white;
+  border:15px transparent;
   
 
   
 
+}
+
+.btn-info {
+  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  border-color: transparent;
 }

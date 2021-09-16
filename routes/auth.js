@@ -20,7 +20,7 @@ router.get('/profile', isLoggedIn, (req, res) => {
     .findById(req.user._id)
     .populate('favourites')
     .then((user) =>{
-      res.render('auth/profile', { profile });
+      res.render('auth/profile', { user:user });
     })
     .catch((error) => console.log(error))
 });

@@ -1,17 +1,21 @@
 
 
-const { colorScheme, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
-const colorSchema = new Scheme(
-  {
-    colors:[String],
-    
-    
-    
-  },
-  {
-    timestamps: true
-  }
-);
+const colorSchema = new Schema({
+  color:String,
+  img:String
+  
+  
+},{
 
-module.exports = model('color', colorScheme);
+
+  timestamps: true
+})
+
+
+
+
+const Color = model("Color", colorSchema);
+
+module.exports = Color;
