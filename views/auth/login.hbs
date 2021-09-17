@@ -1,32 +1,29 @@
 <center>
-<hgroup>
-  <h1>Hi 🌞 </h1>
-  <h3>Log-in</h3>
-</hgroup>
-<form action= "/auth/login" method= "POST">
-  <div class="group">
-    <p>Email</p>
-    <input name="email" type="email">
-    
-  </div>
-  
-   <p>Password</p>
-   <input name= "password" type="password" value="FakePSW" id="myInput">
-<br>
-<br>
+  <hgroup>
+    <h1>Hi 🌞 </h1>
+    <h3>Log-in</h3>
+  </hgroup>
+  <form class="login" action="/auth/login" method="POST">
+    <div class="group">
+      <p>Email</p>
+      <input name="email" type="email">
 
- <button type="submit" href= "/profile" class="btn btn-primary my-2">Log in </button>
-  
-</form>
+    </div>
+
+    <p>Password</p>
+    <input name="password" type="password" value="FakePSW" id="myInput">
+    <br>
+    <br>
+
+    <button type="submit" href="/profile" class="btn btn-primary my-2">Log in </button>
+
+  </form>
 </center>
 
 <p>{{errorMessage}}</p>
 <footer>
 
 
-   
+
 
 </footer>
-
-
-   

@@ -2,28 +2,25 @@
   <h1>Wellcome to Colored id 👋🏽</h1>
   <h3>Sign-Up</h3>
 </hgroup>
-<form action= "/auth/signup" method= "POST">
+<form class="login" action="/auth/signup" method="POST">
   <div class="group">
     <p>Name</p>
-    <input name= "username" type="text">
-    
+    <input name="username" type="text">
+
   </div>
- <div class="group">
+  <div class="group">
     <p>Email</p>
-    <input name= "email" type="email">
-    
+    <input name="email" type="email">
+
   </div>
-  
+
   <p>Password</p>
-   <input name= "password" type="password" value="FakePSW" id="myInput">
-<br>
-<br>
-   <button type="submit" href="/profile" class="btn btn-primary my-2">Sign up</button>
+  <input name="password" type="password" value="FakePSW" id="myInput">
+  <br>
+  <br>
+  <button type="submit" href="/profile" class="btn btn-primary my-2">Sign up</button>
 </form>
 <p>{{errorMessage}}</p>
 <footer>
-  
+
 </footer>
-
-
-   

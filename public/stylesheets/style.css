@@ -55,9 +55,9 @@ h2{color:#000000;}
 
 h3 { color: #000000; }
 
-form {
-	width: 150px;
-  height: 80px;
+.login {
+	width: 20vw;
+  height: 20vh;
 	margin: 4em auto;
 	padding: 3em 2em 2em 2em;
 	background: #fafafa;
@@ -65,6 +65,15 @@ form {
 	box-shadow: none;
   border-radius: 15px;
 }
+
+.colorImage{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+
 
 .group { 
 	position: relative; 
@@ -323,7 +332,7 @@ a:hover{
   border-radius: 25px;
   width: 150px;
   height: 80px;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
   
   
 }
