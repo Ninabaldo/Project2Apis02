@@ -414,7 +414,60 @@ button:hover{
 
 
 
+/* Picker */
+.picker {
+  display: flex;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.1);
+}
 
+/* Picker focus ring */
+.picker:focus-within {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* Inputs */
+input {
+  height: 50px;
+  border: none;
+  outline: 0;
+}
+
+/* Text field */
+input[type="text"] {
+  
+  text-transform: uppercase;
+}
+
+/* Color picker */
+input[type="color"] {
+  width: 50px;
+  -webkit-appearance: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* Quick dirty reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Layout */
+html {
+  height: 100%;
+  width: 100%;
+}
 
 
 
