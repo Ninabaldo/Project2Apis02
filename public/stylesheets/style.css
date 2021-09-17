@@ -297,7 +297,7 @@ a:hover{
   height: 500px;
   width: 500px;
   border:15px transparent;
-  margin-left:870px;
+  margin-left:950px;
   
 
   
@@ -386,6 +386,20 @@ button:hover{
   border-radius:20px;
   
 }
+
+.profilecolors{
+  width: 200px;
+  height: 200px;
+  border-radius:20px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  
+  
+  
+}
+
+
 
 
 

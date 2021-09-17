@@ -10,12 +10,19 @@
         <h2 class="font-monospace">Hey {{ user.username }} wellcome to your personal page,
         save here your favourites combinations</h2>
 </center>
-       
+   
         {{#each user.favourites}}
-             <h2 class="font-monospace"> # {{color}}</h1>
-               
+       <center>
+         <div class="contenedor">   
             <img src={{img}} class= "profilecolors"/> 
+            <form action = "/delete-favourite" method="POST">
+    <input type="hidden" name="id" value={{_id}}>
 
+<button type="submit">borrar favorito</button>
+</form>
+            
+            </center>            
+</div>
  </div>
   {{/each}}
                       
