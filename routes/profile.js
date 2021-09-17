@@ -1,7 +1,7 @@
 
 const router = require("express").Router();
-const Color= require("../models/Color.model");
-const User= require("../models/User.model");
+const Color= require("../models/colors.model");
+const User= require("../models/users.model");
 const isLoggedIn= require("../middleware/isLoggedIn");
 
 
