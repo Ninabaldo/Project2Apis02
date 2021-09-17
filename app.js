@@ -28,7 +28,7 @@ const index = require("./routes/index");
 app.use("/", index);
 
 const authRoutes = require("./routes/auth");
-app.use("/", authRoutes);
+app.use("/auth", authRoutes);
 
 //const colorRoutes = require("./routes/color");
 //app.use("/color", colorRoutes);

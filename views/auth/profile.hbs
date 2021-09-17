@@ -1,19 +1,25 @@
-
+<body>
+    <br>
+      <br>
+        <br>
+<center>
 
 <div id="profile">
 
     <div class="container user-list">
-        <h2>Hey {{ user.username }} wellcome to your personal page, <br>
+        <h2 class="font-monospace">Hey {{ user.username }} wellcome to your personal page,
         save here your favourites combinations</h2>
+</center>
+       
         {{#each user.favourites}}
-             {{color}}
+             <h2 class="font-monospace"> # {{color}}</h1>
                
-            <img src={{img}} class= "colors2"/> 
+            <img src={{img}} class= "profilecolors"/> 
 
  </div>
   {{/each}}
                       
-            
+     </body>       
         
 
 
