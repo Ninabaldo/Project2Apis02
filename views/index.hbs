@@ -2,28 +2,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <br>
 <center>
-<h1 class="fw-bold">COLORED ID <br>
+  <h1 class="fw-bold">COLORED ID <br>
 
-🌸 🌿 🌾 🌺  </h1> <br>
+    🌸 🌿 🌾 🌺 </h1> <br>
 
-<br> <br> <P class="font-monospace">Find new colors and see the combinations that we prepared to you, clicking on the #hexadecimal number in the center of each color.<br>
-Refresh the page for more colors!</P>
+  <br> <br>
+  <h3 class="font-monospace">Find new colors and see the combinations that we prepared to you, clicking on the
+    #hexadecimal number in the center of each color.<br><br>
+    Refresh the page for more colors!</h3>
 </center>
 <br>
 <br>
 <hr>
-<div class="contenedor">
-  {{#each schemeArray}}
+<center>
+  <div class="contenedor">
+    {{#each schemeArray}}
 
-   <div style='background-image: url({{this.image}})'; class= "colors"> 
- <a href=/scheme/{{this.hex}}>{{this.hex}}</a>
- </div>
-  {{/each}}
- 
-</div>
+    <div style='background-image: url({{this.image}})' ; class="colors">
+      <a href=/scheme/{{this.hex}}>{{this.hex}}</a>
+    </div>
+    {{/each}}
 
-<footer>
+  </div>
+
+  <footer>
 
 
- 
-</footer>
+
+  </footer>
