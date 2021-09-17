@@ -24,17 +24,19 @@ router.post("/add-favourite", isLoggedIn, (req, res, next) => {
 
 /* DELATE FAVOURITE */
   router.post("/delete-favourite",isLoggedIn,(req,res,next)=>{
-    const {color,img}= req.body
-    Color.delate({color:color.toString(),img})
-    .then((color)=>{
+    //const id = req.body.id
+    const {id} = req.body
+    //console.log(req.body)
+    
+    
       User
-     .findByIdAndUpdate(req.user._id,{$pull : {favourites :color._id}})
+     .findByIdAndUpdate(req.user._id,{$pull : {favourites :id}})
      .then(()=>{
       res.redirect("/auth/profile")
      })
      .catch(err => 
       console.log(err))
-    })
+    
    
 })
   
