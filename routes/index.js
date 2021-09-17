@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const isLoggedIn = require("../middleware/isLoggedIn");
 const User = require("../models/users.model");
-const Api = require("../services/ApiHandler");
+const Api = require("../service/ApiHandler");
 const ColorAPI = new Api()
 const randomColor = require('randomcolor'); 
 
