@@ -5,28 +5,28 @@
 <br>
 <br>
 
+<center>
 
- 
- <h2 class="font-monospace"> # {{scheme.seed.hex.clean}} based color<br></h2>
+  <h2 class="font-monospace"> # {{scheme.seed.hex.clean}} based color<br></h2>
   <br>
   <br>
-<br>
-<br>
+  <br>
+  <br>
+
+  </div>
+
+
+  </div>
+
+  <img src={{scheme.image.bare}} class="colors2" />
 
 
 
-   
-  	</div>
-   
-  
-	</div>      
-            
-            <img src={{scheme.image.bare}} class= "colors2"/> 
-
-            
- 
-                 <form action = "/add-favourite" method="POST"> 
-                 <input type="hidden" name="color" value={{scheme.seed.hex.clean}}>
-                 <input type="hidden" name="img" value={{scheme.image.bare}}>
-                 <button type="submit"class="btn btn-primary my-2">Favourite ♥︎ </button> </form>      
-            
+  <form action="/add-favourite" method="POST">
+    <input type="hidden" name="color" value={{scheme.seed.hex.clean}}>
+    <input type="hidden" name="img" value={{scheme.image.bare}}>
+</center>
+<center>
+  <button type="submit" class="btn btn-primary my-2">♥︎</button>
+  </form>
+</center>

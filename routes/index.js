@@ -6,19 +6,19 @@ const ColorAPI = new Api()
 const randomColor = require('randomcolor'); 
 
 
+
 router.get('/',(req, res)=>{
-    let colors = randomColor({count:40})
-    let colors = randomColor({count:53})
+    let colors = randomColor({count:21})
    colors = colors.map ((color)=>{
     return color.substring (1)      })
     let schemeArray =[]
 
     colors.forEach((color)=>{ 
       ColorAPI
-    .getColorScheme(color.toString()) 
+    .getColor(color.toString()) 
     .then((result) => { console.log(result.data.seed.hex.value)
-        schemeArray.push({image:result.data.image.bare, hex:result.data.seed.hex.value})
-        if(schemeArray.length === 53 ){
+        schemeArray.push({image:result.data.image.bare, hex:result.data.seed.hex.clean})
+        if(schemeArray.length === 21 ){
          //res.send(result)
           res.render("index", {schemeArray} )
         } 
@@ -27,50 +27,30 @@ router.get('/',(req, res)=>{
      
     })
     
-    
-    
 })
 
 
 
-router.post("/add-favorite", isLoggedIn ,(req, res) =>{
-const query = { hex, rgb, image } = req.body
-const idToCheck = req.body.id;
-    Color.find({id: idToCheck})
-	.then (colArray => {
-	
-		if (colrray.length === 0) {
-            Color
-                .create(query)
-                .then(result => {
-                  User
-                    .findByIdAndUpdate(req.user._id,{$push : {favorites : result._id}})
-                    .then(()=>{
-                        res.redirect("/")
-                    })
-                })
-                .catch(err => console.log(err))
-        } else {
-			User
-            .findById(req.user._id)
-            .then((user)=>{
-                if (!user.favorites.includes(colArray[0]._id)){
-                    User
-                    .findByIdAndUpdate(req.user._id,{$push : {favorites : charArray[0]._id}})
-                    .then(()=>{
-                        res.redirect("/")
-                    })
-                }else{res.redirect("/")}
-            })
-            .catch((err)=>{
-            console.log(err)
-            })
-            
-            
-            
-		}
-	}) 
+router.get("/scheme/:color",(req, res)=>{
+    console.log(res)
+   const gradient = req.params.color 
+   ColorAPI
+   .getGradientScheme(gradient)
+   .then((scheme)=>{
+       res.render("scheme", {scheme:scheme.data})
+       //res.send(scheme.data)
+   
+
+
+   })
+   .catch(err => console.log(err));
 })
+
+
+
+
+
+
 
 
 module.exports = router;

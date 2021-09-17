@@ -7,24 +7,24 @@
     <div id="profile">
 
         <div class="container user-list">
-            <h2 class="font-monospace">Hey {{ user.username }} wellcome to your personal page,
+            <h2 class="font-monospace">Hey {{ user.username }}! wellcome to your personal page,
                 save here your favourites combinations</h2>
 
             <div class="contenedor">
                 {{#each user.favourites}}
 
-
+                <!--  -->
                 <img src={{img}} class="profilecolors" />
-                <form action="/delete-favourite" method="POST">
-                    <input type="hidden" name="id" value="{{_id}}">
-
-
-                    <button type="submit">borrar favorito</button>
-                </form>
                 {{/each}}
+                <center>
+                    <form action="/delete-favourite" method="POST">
+                        <input type="hidden" name="id" value="{{_id}}">
+                        <button type="submit">Delete</button>
+
+                    </form>
             </div>
         </div>
     </div>
-
+    </center>
 
 </body>
